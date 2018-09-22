@@ -10,8 +10,14 @@
     |<h1>FORMULARIO EJEMPLO CLASE #2</h1> 
     <br>
     <span>Nombre</span>
-    <el-input placeholder="Introduzca su nombre" v-model="input"></el-input>
-<br>
+      <el-input placeholder="Introduzca su nombre" v-model="input"></el-input> 
+    <br>
+    <span>Seleccione su genero:</span>
+    <el-radio-group v-model="radio2">
+        <el-radio :label="3">Masculino</el-radio>
+        <el-radio :label="6">Femenino</el-radio>
+      </el-radio-group>
+    <br>
     <el-button @click="visible = true">Subir</el-button>
     <el-dialog :visible.sync="visible" title="Hola">
       <p>Prueba</p>
