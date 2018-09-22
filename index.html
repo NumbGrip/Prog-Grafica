@@ -7,11 +7,16 @@
 </head>
 <body>
   <div id="app">
-    |<h1>FORMULARIO EJEMPLO CLASE #2</h1>
-    <el-button @click="visible = true">Buton</el-button>
+    |<h1>FORMULARIO EJEMPLO CLASE #2</h1> 
+    <br>
+    <span>Nombre</span>
+    <el-input placeholder="Introduzca su nombre" v-model="input"></el-input>
+<br>
+    <el-button @click="visible = true">Subir</el-button>
     <el-dialog :visible.sync="visible" title="Hola">
       <p>Prueba</p>
     </el-dialog>
+   
   </div>
 </body>
   <!-- import Vue before Element -->
