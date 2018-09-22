@@ -32,6 +32,8 @@
           :value="item.value">
         </el-option>
       </el-select>
+    <br>
+    <el-checkbox v-model="checked">Acepto los terminos y condiciones:</el-checkbox>
     <el-button @click="visible = true">Subir</el-button>
     <el-dialog :visible.sync="visible" title="Hola">
       <p>Prueba</p>
