@@ -13,6 +13,7 @@
       <el-input placeholder="Introduzca su nombre" v-model="input"></el-input> 
     <br>
     <span>Seleccione su genero:</span>
+    <br>
     <el-radio-group v-model="radio2">
         <el-radio :label="3">Masculino</el-radio>
         <el-radio :label="6">Femenino</el-radio>
@@ -33,7 +34,8 @@
         </el-option>
       </el-select>
     <br>
-    <el-checkbox v-model="checked">Acepto los terminos y condiciones:</el-checkbox>
+    <el-checkbox v-model="checked">Acepto los terminos y condiciones</el-checkbox>
+    <br>
     <el-button @click="visible = true">Subir</el-button>
     <el-dialog :visible.sync="visible" title="Hola">
       <p>Prueba</p>
