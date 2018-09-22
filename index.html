@@ -18,6 +18,10 @@
         <el-radio :label="6">Femenino</el-radio>
       </el-radio-group>
     <br>
+    <span>Introduzca su edad:</span>
+    <br>
+    <el-input-number v-model="num1" @change="handleChange" :min="1" :max="99"></el-input-number>
+    <br>
     <el-button @click="visible = true">Subir</el-button>
     <el-dialog :visible.sync="visible" title="Hola">
       <p>Prueba</p>
